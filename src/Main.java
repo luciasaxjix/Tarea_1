@@ -28,6 +28,12 @@ public class Main extends Application {
         launch(args);
     }
 
+
+    /**
+     * Acá se muestra parte de lo necesario para crear la interfaz.
+     * Se utilizaron GridPane, Labels, TextField, Buttons, ComboBoxes.
+     * Creado por: Mariela Lucía Sánchez Jiménez - CE DATOS l 2023
+     */
     @Override
     public void start(Stage paginaMain) throws Exception{
 
@@ -115,7 +121,12 @@ public class Main extends Application {
         paginaMain.setScene(scene);
         paginaMain.show();
     }
-
+    /**
+     * Agregar persona
+     * Acá se pueden agregar las personas, deben cumplir con las características que están en el if para crearse,
+     * de lo contrario no se podrán agregar más personas.
+     * Creado por: Mariela Lucía Sánchez Jiménez - CE DATOS l 2023
+     */
     public void agregarPersona(String nombre, String provincia, int edad){
         if (cantidad < 4 && !nombre.equals("") && !provincia.equals("") && edad>0){
             listaPersonas[cantidad] = new Persona(nombre, provincia, edad);
@@ -127,7 +138,12 @@ public class Main extends Application {
             System.out.println("No mas");
         }
     }
-    
+
+    /**
+     * Operar / Operaciones
+     * Acá se realizan las operaciones necesarias como: sumar,restar, multiplicar y dividir. Los datos utilizados son la edad de las personas.
+     * Creado por: Mariela Lucía Sánchez Jiménez - CE DATOS l 2023
+     */
     public void operando(String operador, String persona1, String persona2){
         int num1=0, num2=0;
         for (int i = 0; i < cantidad; i++) {
